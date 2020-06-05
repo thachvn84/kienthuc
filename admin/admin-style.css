@@ -13,7 +13,7 @@ float: left;
 background-color:#fff;
 border-left:1px solid #D1E5EE;
 float:left;
-font-family:"Lucida Grande", Sans-serif;
+font-family:"Lucida Grande";
 margin-left:-1px;
 min-height:550px;
 width:559px;
@@ -398,7 +398,7 @@ border-width:1px;
 #truethemes_container .controls input,#truethemes_container .controls select,#truethemes_container .controls textarea {
 background-color:#F4F4F4;
 border:1px solid;
-font-family:"Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+font-family:"Lucida Grande", "Lucida Sans Unicode", Arial, Verdana;
 font-size:12px;
 margin-bottom:9px;
 width:340px;

@@ -1,60 +1,50 @@
 <?php
 /**
- * Plugin Name: Category List Widget
+ * Plugin Name: Show Category & Tag random widget
  */
-
-add_action( 'widgets_init', 'mvp_catlist_load_widgets' );
-
-function mvp_catlist_load_widgets() {
-	register_widget( 'mvp_catlist_widget' );
+add_action( 'widgets_init', 'trada_random_cattag_load_widgets' );
+function trada_random_cattag_load_widgets() {
+	register_widget( 'trada_random_cattag_widget' );
 }
-
-class mvp_catlist_widget extends WP_Widget {
-
+class trada_random_cattag_widget extends WP_Widget {
 	/**
 	 * Widget setup.
 	 */
 	function __construct() {
 		/* Widget settings. */
-		$widget_ops = array( 'classname' => 'mvp_catlist_widget', 'description' => __('A widget that displays a list of posts from a category of your choice.', 'mvp-text') );
-
+		$widget_ops = array( 'classname' => 'trada_random_cattag_widget', 'description' => __('A widget that displays a list of posts from a category of your choice.', 'mvp-text') );
 		/* Widget control settings. */
-		$control_ops = array( 'width' => 250, 'height' => 350, 'id_base' => 'mvp_catlist_widget' );
-
+		$control_ops = array( 'width' => 250, 'height' => 350, 'id_base' => 'trada_random_cattag_widget' );
 		/* Create the widget. */
-		parent::__construct( 'mvp_catlist_widget', __('Flex Mag: Category List Widget', 'mvp-text'), $widget_ops, $control_ops );
-	}
-
+		parent::__construct( 'trada_random_cattag_widget', __('Trada5p: Show Category & Tag random widget', 'mvp-text'), $widget_ops, $control_ops );
+    }
+    
 	/**
 	 * How to display the widget on the screen.
 	 */
 	function widget( $args, $instance ) {
 		extract( $args );
-
 		/* Our variables from the widget settings. */
 		global $post;
-		$title = apply_filters('widget_title', $instance['title'] );
+        $title = apply_filters('widget_title', $instance['title'] );
+        $tags = $instance['tags'];
 		$categories = $instance['categories'];
 		$showcat = $instance['showcat'];
 		$number = $instance['number'];
-
 		/* Before widget (defined by themes). */
 		echo $before_widget;
-
 		/* Display the widget title if one was input (before and after defined by themes). */
 		if ( $title )
 			echo $before_title . $title . $after_title;
-
 		?>
 			<div class="blog-widget-wrap left relative">
 				<ul class="blog-widget-list left relative">
-					<?php $recent = new WP_Query(array( 'cat' => $categories, 'posts_per_page' => $number )); while($recent->have_posts()) : $recent->the_post(); ?>
+					<?php $recent = new WP_Query(array( 'cat' => $categories, 'tag' => $tags, 'posts_per_page' => $number, 'orderby' => 'rand')); while($recent->have_posts()) : $recent->the_post(); ?>
 						<li>
-
 							<a href="<?php the_permalink(); ?>" rel="bookmark">
 							<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
 								<div class="blog-widget-img left relative">
-									
+
 									<?php the_post_thumbnail('mvp-small-thumb', array( 'class' => 'widget-img-side' )); ?>
 									<?php $post_views = get_post_meta($post->ID, "post_views_count", true); if ( $post_views >= 1) { ?>
 									<div class="feat-info-wrap">
@@ -88,40 +78,31 @@ class mvp_catlist_widget extends WP_Widget {
 				</ul>
 			</div><!--blog-widget-wrap-->
 		<?php
-
 		/* After widget (defined by themes). */
 		echo $after_widget;
-
 	}
-
 	/**
 	 * Update the widget settings.
 	 */
 	function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
-
 		/* Strip tags for title and name to remove HTML (important for text inputs). */
-		$instance['title'] = strip_tags( $new_instance['title'] );
+        $instance['title'] = strip_tags( $new_instance['title'] );
+        $instance['tags'] = strip_tags( $new_instance['tags'] );
 		$instance['categories'] = strip_tags( $new_instance['categories'] );
 		$instance['showcat'] = strip_tags( $new_instance['showcat'] );
 		$instance['number'] = strip_tags( $new_instance['number'] );
-
 		return $instance;
 	}
-
-
 	function form( $instance ) {
-
 		/* Set up some default widget settings. */
-		$defaults = array( 'title' => 'Title', 'showcat' => 'on', 'number' => 5 );
+		$defaults = array( 'title' => 'Title', 'tags' => '', 'showcat' => 'on', 'number' => 5 );
 		$instance = wp_parse_args( (array) $instance, $defaults ); ?>
-
 		<!-- Widget Title: Text Input -->
 		<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>">Title:</label>
 			<input id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" style="width:90%;" />
 		</p>
-
 		<!-- Category -->
 		<p>
 			<label for="<?php echo $this->get_field_id('categories'); ?>">Select category:</label>
@@ -133,22 +114,22 @@ class mvp_catlist_widget extends WP_Widget {
 				<?php } ?>
 			</select>
 		</p>
-
+       <!-- Tag -->
+		<p>
+			<label for="<?php echo $this->get_field_id( 'tags' ); ?>">Tag Name:</label>
+			<input id="<?php echo $this->get_field_id( 'tags' ); ?>" name="<?php echo $this->get_field_name( 'tags' ); ?>" value="<?php echo $instance['tags']; ?>" style="width:90%;" />
+		</p>
 		<!-- Show Categories -->
 		<p>
 			<label for="<?php echo $this->get_field_id( 'showcat' ); ?>">Show categories on posts:</label>
 			<input type="checkbox" id="<?php echo $this->get_field_id( 'showcat' ); ?>" name="<?php echo $this->get_field_name( 'showcat' ); ?>" <?php checked( (bool) $instance['showcat'], true ); ?> />
 		</p>
-
 		<!-- Number of posts -->
 		<p>
 			<label for="<?php echo $this->get_field_id( 'number' ); ?>">Number of posts to display:</label>
 			<input id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" value="<?php echo $instance['number']; ?>" size="3" />
 		</p>
-
-
 	<?php
 	}
 }
-
 ?>

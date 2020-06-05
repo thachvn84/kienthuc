@@ -179,22 +179,6 @@
 							</header><!--post-header-->
 						<?php } ?>
 										<?php $socialbox = get_option('mvp_social_box'); if ($socialbox == "true") { ?>
-											<section class="social-sharing-top">
-												<a href="#" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>', 'facebookShare', 'width=626,height=436'); return false;" title="<?php _e( 'Share on Facebook', 'mvp-text' ); ?>"><div class="facebook-share"><span class="fb-but1"><i class="fa fa-facebook fa-2"></i></span><span class="social-text"><?php _e( 'Share', 'mvp-text' ); ?></span></div></a>
-												<a href="#" onclick="window.open('http://twitter.com/share?text=<?php the_title(); ?> -&amp;url=<?php the_permalink() ?>', 'twitterShare', 'width=626,height=436'); return false;" title="<?php _e( 'Tweet This Post', 'mvp-text' ); ?>"><div class="twitter-share"><span class="twitter-but1"><i class="fa fa-twitter fa-2"></i></span><span class="social-text"><?php _e( 'Tweet', 'mvp-text' ); ?></span></div></a>
-												<a href="whatsapp://send?text=<?php the_title(); ?> <?php the_permalink() ?>"><div class="whatsapp-share"><span class="whatsapp-but1"><i class="fa fa-whatsapp fa-2"></i></span><span class="social-text"><?php _e( 'Share', 'mvp-text' ); ?></span></div></a>
-												<a href="#" onclick="window.open('http://pinterest.com/pin/create/button/?url=<?php the_permalink();?>&amp;media=<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'mvp-post-thumb' ); echo $thumb['0']; ?>&amp;description=<?php the_title(); ?>', 'pinterestShare', 'width=750,height=350'); return false;" title="<?php _e( 'Pin This Post', 'mvp-text' ); ?>"><div class="pinterest-share"><span class="pinterest-but1"><i class="fa fa-pinterest-p fa-2"></i></span><span class="social-text"><?php _e( 'Share', 'mvp-text' ); ?></span></div></a>
-												<a href="mailto:?subject=<?php the_title(); ?>&amp;BODY=<?php _e( 'I found this article interesting and thought of sharing it with you. Check it out:', 'mvp-text' ); ?> <?php the_permalink(); ?>"><div class="email-share"><span class="email-but"><i class="fa fa-envelope fa-2"></i></span><span class="social-text"><?php _e( 'Email', 'mvp-text' ); ?></span></div></a>
-												<?php if ( ! is_singular( 'scoreboard' )) { ?>
-													<?php $disqus_id = get_option('mvp_disqus_id'); if ($disqus_id) { if (isset($disqus_id)) {  ?>
-														<?php $mvp_click_id = get_the_ID(); ?>
-														<a href="#disqus_thread"><div class="social-comments comment-click-<?php echo esc_html($mvp_click_id); ?>"><i class="fa fa-commenting fa-2"></i></div></a>
-													<?php } } else { ?>
-														<?php $mvp_click_id = get_the_ID(); ?>
-														<a href="<?php comments_link(); ?>"><div class="social-comments comment-click-<?php echo esc_html($mvp_click_id); ?>"><i class="fa fa-commenting fa-2"></i><span class="social-text-com"><?php _e('Comments', 'mvp-text'); ?></span></div></a>
-													<?php } ?>
-												<?php } ?>
-											</section><!--social-sharing-top-->
 										<?php } ?>
 										<?php if ( has_post_format( 'gallery', $post->ID )) { ?>
 											<section class="post-gallery-wrap left relative">

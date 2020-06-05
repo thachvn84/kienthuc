@@ -141,7 +141,7 @@ span.soc-count-text,
 #content-main table,
 .foot-copy p,
 .video-main-text p {
-	font-family: '$content_font', sans-serif;
+	font-family: '$content_font';
 	}
 
 a,
@@ -279,7 +279,7 @@ nav.main-menu-wrap ul li a,
 ul.col-tabs li a,
 nav.fly-nav-menu ul li a,
 .foot-menu .menu li a {
-	font-family: '$menu_font', sans-serif;
+	font-family: '$menu_font';
 	}
 
 .feat-top2-right-text h2,
@@ -298,7 +298,7 @@ span.post-header,
 .woocommerce ul.products li.product h3,
 .video-main-text h2,
 .mvp-related-text a {
-	font-family: '$headline_font', sans-serif;
+	font-family: '$headline_font';
 	}
 
 .feat-wide-sub-text h2,
@@ -313,7 +313,7 @@ h1.post-title,
 h1.post-title-wide,
 #content-main blockquote p,
 #commentspopup #content-main h1 {
-	font-family: '$featured_font', sans-serif;
+	font-family: '$featured_font';
 	}
 
 h3.home-feat-title,
@@ -336,7 +336,7 @@ h3.foot-head,
 #content-main h4,
 #content-main h5,
 #content-main h6 {
-	font-family: '$heading_font', sans-serif;
+	font-family: '$heading_font';
 	}
 
 </style>
@@ -413,6 +413,15 @@ if ( !function_exists( 'mvp_sidebars_init' ) ) {
 			'before_title' => '<h4 class="post-header"><span class="post-header">',
 			'after_title' => '</span></h4>',
 		));
+
+		register_sidebar( array(
+			'id' => 'archive-left-widget',
+				'name' => 'Archive Left Widget Area',
+				'before_widget' => '<div id="%1$s" class="archive-left-widget left relative %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<div class="archive-left-title-wrap left relative"><h3 class="side-list-title">',
+				'after_title' => '</h3></div>',
+		) );
 
 	}
 }
@@ -999,13 +1008,17 @@ function mvpRelatedPosts() {
       		if (in_array($individual_tag->term_id,$excluded_tags)) continue;
  		$tag_ids[] = $individual_tag->term_id;
 	}
+		$given_date_as_time = strtotime($post->post_date);
         $args=array(
             'tag__in' => $tag_ids,
 	    'order' => 'DESC',
 	    'orderby' => 'date',
             'post__not_in' => array($post->ID),
-            'posts_per_page'=> 3,
-            'ignore_sticky_posts'=> 1
+            'posts_per_page'=> 8,
+			'ignore_sticky_posts'=> 1,
+			'date_query' => array(
+				'before' => date('c', strtotime( '0 days', $given_date_as_time ) )
+			),
         );
         $my_query = new WP_Query( $args );
         if( $my_query->have_posts() ) { ?>
@@ -2094,11 +2107,11 @@ span.mvp-author-page-desc,
 .rwp-u-review__comment,
 .mvp-feat5-mid-main-text p,
 .mvp-feat5-small-main-text p {
-	font-family: '<?php echo $content_font; ?>', sans-serif;
+	font-family: '<?php echo $content_font; ?>';
 	}
 
 nav.mvp-fly-nav-menu ul li a {
-	font-family: '<?php echo $menu_font; ?>', sans-serif;
+	font-family: '<?php echo $menu_font; ?>';
 	}
 
 h1.mvp-post-title,
@@ -2107,12 +2120,12 @@ h1.mvp-post-title-wide,
 .mvp-post-add-main blockquote p,
 #mvp-404 h1,
 .mvp-related-text p {
-	font-family: '<?php echo $featured_font; ?>', sans-serif;
+	font-family: '<?php echo $featured_font; ?>';
 	}
 				
 .mvp-post-more-text p,
 span.mvp-widget-home-title {
-	font-family: '<?php echo $headline_font; ?>', sans-serif;
+	font-family: '<?php echo $headline_font; ?>';
 	}
 
 span.mvp-feat1-pop-head,
@@ -2132,7 +2145,7 @@ h1.mvp-author-top-head,
 .mvp-post-tags a,
 span.mvp-cd-cat,
 span.mvp-cd-date {
-	font-family: '<?php echo $heading_font; ?>', sans-serif;
+	font-family: '<?php echo $heading_font; ?>';
 	}
 					
 	<?php

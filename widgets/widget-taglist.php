@@ -52,7 +52,7 @@ class mvp_taglist_widget extends WP_Widget {
 							<a href="<?php the_permalink(); ?>" rel="bookmark">
 							<?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) { ?>
 								<div class="blog-widget-img left relative">
-									<?php the_post_thumbnail('mvp-mid-thumb', array( 'class' => 'widget-img-main' )); ?>
+									
 									<?php the_post_thumbnail('mvp-small-thumb', array( 'class' => 'widget-img-side' )); ?>
 									<?php $post_views = get_post_meta($post->ID, "post_views_count", true); if ( $post_views >= 1) { ?>
 									<div class="feat-info-wrap">

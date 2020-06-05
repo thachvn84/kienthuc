@@ -272,9 +272,10 @@
 	#post-header {
 		display: block;
 		float: left;
-		margin: 30px 4.1782729805%; /* 30px / 718px */
+		margin-bottom: 0px; /* 30px / 718px */
 		padding: 0;
-		width: 91.643454039%; /* 658px / 718px */
+		width: 100%; /* 658px / 718px */
+		background: black;
 		}
 		
 	h1.post-title,
@@ -523,11 +524,13 @@
 		
 	#post-header {
 		display: block;
-		float: left;
-		margin: 30px 4.1782729805%; /* 30px / 718px */
-		padding: 0;
-		width: 91.643454039%; /* 658px / 718px */
-		max-width: none;
+    float: left;
+    /* margin: 30px 4.1782729805%; */
+    margin-bottom: 0px;
+    padding: 0;
+    width: 100%;
+	max-width: none;
+	background: black;
 		}
 		
 	h1.post-title,
@@ -761,14 +764,16 @@
 	#post-header {
 		display: block;
 		float: left;
-		margin: 30px 4.67289719626%; /* 30px / 642px */
+		margin-left: 0px;
 		padding: 0;
-		width: 90.6542056075%; /* 582px / 642px */
+		width: 100%;
+		background: black;
 		}
 		
 	h1.post-title,
 	#content-main h1.post-title {
 		font-size: 2rem;
+		margin-left: 10px;
 		}
 		
 	#content-area,
@@ -936,7 +941,6 @@
 
 	.fly-to-top,
 	#tab-col2,
-	nav.main-menu-wrap,
 	.feat-title-wrap,
 	#tab-col2 .side-title-wrap,
 	ul.col-tabs li.pop-col-tab,
@@ -1360,15 +1364,15 @@
 		}
 		
 	.nav-logo-out {
-		margin-left: -280px !important;
+		margin-left: -110px !important;
 		}
 		
 	.nav-logo-in {
-		margin-left: 280px !important;
+		margin-left: 110px !important;
 		}
 		
 	.nav-left-wrap {
-		width: 280px !important;
+		width: 110px !important;
 		}
 		
 	.nav-logo-fade {
@@ -1383,7 +1387,6 @@
 
 @media screen and (max-width: 899px) and (min-width: 768px) {
 
-	nav.main-menu-wrap,
 	.fly-to-top,
 	#tab-col2,
 	.feat-title-wrap,
@@ -1576,9 +1579,10 @@
 	#post-header {
 		display: block;
 		float: left;
-		margin: 30px 4.10396716826%; /* 30px / 731px */
+		/* margin: 30px 4.10396716826%; */
+		/* margin-bottom: 10px; */
 		padding: 0;
-		width: 91.7920656635%; /* 671px / 731px */
+		width: 100%;
 		}
 		
 	#content-area,
@@ -1922,15 +1926,15 @@
 		}
 		
 	.nav-logo-out {
-		margin-left: -280px !important;
+		margin-left: -110px !important;
 		}
 		
 	.nav-logo-in {
-		margin-left: 280px !important;
+		margin-left: 110px !important;
 		}
 		
 	.nav-left-wrap {
-		width: 280px !important;
+		width: 110px !important;
 		}
 		
 	.nav-logo-fade {
@@ -1945,7 +1949,6 @@
 
 @media screen and (max-width: 767px) and (min-width: 660px) {
 		
-	nav.main-menu-wrap,
 	.fly-to-top,
 	#tab-col2,
 	#tab-col3,
@@ -2100,9 +2103,9 @@
 	#post-header {
 		display: block;
 		float: left;
-		margin: 30px 4.66562986003%; /* 30px / 643px */
+		/* margin: 30px 4.66562986003%; */
 		padding: 0;
-		width: 90.6687402799%; /* 583px / 643px */
+		width: 100%;
 		}
 		
 	h1.post-title,
@@ -2473,15 +2476,15 @@
 		}
 		
 	.nav-logo-out {
-		margin-left: -280px !important;
+		margin-left: -110px !important;
 		}
 		
 	.nav-logo-in {
-		margin-left: 280px !important;
+		margin-left: 110px !important;
 		}
 		
 	.nav-left-wrap {
-		width: 280px !important;
+		width: 110px !important;
 		}
 		
 	.nav-logo-fade {
@@ -2505,7 +2508,6 @@
 
 @media screen and (max-width: 659px) and (min-width: 600px) {
 
-	nav.main-menu-wrap,
 	.fly-to-top,
 	#tab-col2,
 	#tab-col3,
@@ -2702,9 +2704,9 @@
 	#post-header {
 		display: block;
 		float: left;
-		margin: 30px 5.14579759863%; /* 30px / 583px */
+		/* margin: 30px 5.14579759863%; */
 		padding: 0;
-		width: 89.7084048027%; /* 523px / 583px */
+		width: 100%;
 		}
 		
 	h1.post-title,
@@ -3068,15 +3070,15 @@
 		}
 		
 	.nav-logo-out {
-		margin-left: -280px !important;
+		margin-left: -110px !important;
 		}
 		
 	.nav-logo-in {
-		margin-left: 280px !important;
+		margin-left: 110px !important;
 		}
 		
 	.nav-left-wrap {
-		width: 280px !important;
+		width: 110px !important;
 		}
 		
 	.nav-logo-fade {
@@ -3105,7 +3107,6 @@
 @media screen and (max-width: 599px) and (min-width: 480px) {
 
 	#score-wrap,
-	nav.main-menu-wrap,
 	.fly-fade,
 	.fly-to-top,
 	#tab-col2,
@@ -3402,9 +3403,9 @@
 	#post-header {
 		display: block;
 		float: left;
-		margin: 30px 4.31965442765% 20px; /* 20px / 463px */
+		/* margin: 30px 4.31965442765% 20px; */
 		padding: 0;
-		width: 91.3606911447%; /* 423px / 463px */
+		/* width: 91.3606911447%;*/
 		}
 		
 	h1.post-title,
@@ -3788,15 +3789,15 @@
 		}
 		
 	.nav-logo-out {
-		margin-left: -280px !important;
+		margin-left: -110px !important;
 		}
 		
 	.nav-logo-in {
-		margin-left: 280px !important;
+		margin-left: 110px !important;
 		}
 		
 	.nav-left-wrap {
-		width: 280px !important;
+		width: 110px !important;
 		}
 		
 	.nav-logo-fade {
@@ -3829,7 +3830,7 @@
 		
 	.mvp-related-posts ul li {
 		margin-left: 3.54609929078% !important; /* 15px / 423px */
-		width: 30.9692671395%; /* 131px / 423px */
+		width: 29%; /* 131px / 423px */
 		}
 		
 	.mvp-related-text a {
@@ -3854,7 +3855,6 @@
 @media screen and (max-width: 479px) {
 
 	#score-wrap,
-	nav.main-menu-wrap,
 	.nav-right-wrap a,
 	.fly-fade,
 	.fly-to-top,
@@ -3930,7 +3930,7 @@
 	   	    -ms-transform: translate3d(0,0,0);
 	   	     -o-transform: translate3d(0,0,0);
 			transform: translate3d(0,0,0);
-		top: 50px;
+		top: 300px;
 		width: 0px;
 		z-index: auto;
 		}
@@ -4196,14 +4196,18 @@
 	#post-header {
 		display: block;
 		float: left;
-		margin: 30px 4.37317784257% 15px; /* 15px / 343px */
 		padding: 0;
-		width: 91.2536443149%; /* 313px / 343px */
-		}
+		width: 100%;
+		background: black;
+		border-bottom: #05005f 1px dotted;
+		margin-bottom: 0px;
+	}
 		
 	h1.post-title,
 	#content-main h1.post-title {
-		font-size: 1.7rem;
+		margin-left: 2%;
+		font-size: 1.2rem;
+		margin-bottom: 0.7em;
 		}
 		
 	.post-feat-text {
@@ -4322,7 +4326,7 @@
 	ul.archive-col-list li {
 		margin-left: 0;
 		width: 100%;
-		height: 300px;
+		/*height: 300px;*/
 		}
 		
 	h1.arch-head {
@@ -4529,7 +4533,7 @@
 		background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 50%, rgba(0,0,0,.7) 100%);
 		top: auto;
 		bottom: 0;
-		padding: 40px 3.33333333% 280px; /* 20px / 600px */ 
+		padding: 40px 3.33333333% 110px; /* 20px / 600px */ 
 		width: 93.34%; /* 560px / 600px */
 		height: auto;
 		}
@@ -4661,15 +4665,15 @@
 		}
 		
 	.nav-logo-out {
-		margin-left: -280px !important;
+		margin-left: -110px !important;
 		}
 		
 	.nav-logo-in {
-		margin-left: 280px !important;
+		margin-left: 110px !important;
 		}
 		
 	.nav-left-wrap {
-		width: 280px !important;
+		width: 110px !important;
 		}
 		
 	.nav-logo-fade {
@@ -4710,7 +4714,7 @@
 	.mvp-related-posts ul li {
 		border-top: 1px solid #ddd;
 		margin-left: 0 !important;
-		margin-top: 15px;
+		margin-top: 0px;
 		padding-top: 15px !important;
 		width: 100%;
 		}

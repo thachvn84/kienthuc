@@ -7,24 +7,24 @@ jQuery(document).ready(function($) {
 	var aboveHeight = $('#head-main-top').outerHeight();
 	    $(window).scroll(function(){
 	    	if ($(window).scrollTop() > aboveHeight){
-	    		$('#main-nav-wrap').addClass('fixed').css('top','0');
+	    		$('#main-nav-wrap').addClass('fixed').css('bottom','0');
 	    		$('.nav-logo-fade').addClass('nav-logo-show');
 	    		$('.nav-logo-out').addClass('nav-logo-out-fade');
 	    		$('.nav-logo-in').addClass('nav-logo-in-fade');
 	    		$('.nav-left-wrap').addClass('nav-left-width');
 	    		$('#wallpaper').addClass('wall-fixed');
-	    		$('.col-tabs-wrap').addClass('fixed-col').css('top','50px');
+	    		$('.col-tabs-wrap').addClass('fixed-col').css('bottom','50px');
 	    		$('#body-main-wrap').addClass('tabs-top-marg');
 	    		$('#body-main-wrap').addClass('body-top-pad');
 	    		$('.fly-to-top').addClass('to-top-trans');
 	    	} else {
-	    		$('#main-nav-wrap').removeClass('fixed');
+	    		$('#main-nav-wrap').removeClass('fixed').css('bottom', '0');
 	    		$('.nav-logo-fade').removeClass('nav-logo-show');
 	    		$('.nav-logo-out').removeClass('nav-logo-out-fade');
 	    		$('.nav-logo-in').removeClass('nav-logo-in-fade');
 	    		$('.nav-left-wrap').removeClass('nav-left-width');
 	    		$('#wallpaper').removeClass('wall-fixed');
-	    		$('.col-tabs-wrap').removeClass('fixed-col').css('top','0');
+	    		$('.col-tabs-wrap').removeClass('fixed-col').css('bottom','0');
 	    		$('#body-main-wrap').removeClass('tabs-top-marg');
 	    		$('#body-main-wrap').removeClass('body-top-pad');
 	    		$('.fly-to-top').removeClass('to-top-trans');

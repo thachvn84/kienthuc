@@ -267,7 +267,7 @@
 														</div><!--archive-list-img-->
 														<div class="archive-list-in">
 															<div class="archive-list-text left relative">
-																<h2><?php the_title(); ?></h2>
+																<h2 style="font-size: 1.3em;font-weight: 600;"><?php the_title(); ?></h2>
 																<p><?php echo wp_trim_words( get_the_excerpt(), 22, '...' ); ?></p>
 															</div><!--archive-list-text-->
 														</div><!--archive-list-in-->

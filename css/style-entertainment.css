@@ -12,7 +12,7 @@ span.post-header,
 #woo-content h1.page-title,
 .woocommerce div.product .product_title,
 .woocommerce ul.products li.product h3 {
-	font-family: 'Montserrat', sans-serif !important;
+	font-family: 'Montserrat',   !important;
 	}
 
 .feat-wide-sub-text h2,
@@ -27,7 +27,7 @@ h1.post-title,
 h1.post-title-wide,
 #content-main blockquote p,
 #commentspopup #content-main h1 {
-	font-family: 'Work Sans', sans-serif !important;
+	font-family: 'Work Sans',   !important;
 	}
 	
 #infscr-loading,
@@ -49,7 +49,7 @@ h3.foot-head,
 #content-main h5,
 #content-main h6,
 span.side-list-cat {
-	font-family: 'Montserrat', sans-serif !important;
+	font-family: 'Montserrat',   !important;
 	}
 	
 .fly-but-wrap,

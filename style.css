@@ -516,7 +516,7 @@ ul.fly-bottom-soc li.rss-soc a:hover {
 	}
 
 span.to-top-text {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato';
 	font-size: 8px;
 	font-weight: 400;
 	line-height: 100%;
@@ -664,11 +664,11 @@ nav.fly-nav-menu ul li ul.sub-menu {
 	}
 
 .nav-logo-in {
-	margin-left: 280px;
+	/*margin-left: 280px;*/
 	}
 
 .nav-left-wrap {
-	width: 280px;
+	width: 110px;
 	}
 
 .nav-logo-fade {
@@ -679,9 +679,10 @@ nav.fly-nav-menu ul li ul.sub-menu {
 	}
 
 .nav-logo {
-	line-height: 0;
-	padding-right: 20px;
-	width: 200px;
+    line-height: 0;
+    /* padding-right: 20px; */
+    width: 40px !important;
+    padding-top: 5px !important;
 	}
 
 .nav-menu-out {
@@ -962,7 +963,7 @@ ul.mega-list li:hover .mega-img img {
 	border: 0;
 	color: #333;
 	float: left;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato';
 	font-size: .9rem;
 	font-weight: 400;
 	line-height: 100%;
@@ -1150,7 +1151,7 @@ ul.col-tabs li.active a {
 .score-nav-menu select option {
 	background: #444;
 	color: #fff;
-	font: 800 12px/100% 'Open Sans', sans-serif;
+	font: 800 12px/100% 'Open Sans';
 	height: 100%;
 	}
 
@@ -1203,7 +1204,7 @@ ul.score-list li:hover {
 .score-top p,
 .score-bot p {
 	color: #bbb;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato';
 	font-size: 11px;
 	font-weight: 400;
 	line-height: 150%;
@@ -1244,7 +1245,7 @@ ul.score-list li:hover {
 
 .es-nav span a {
 	color: #bbb;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Quicksand';
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 100%;
@@ -1741,7 +1742,7 @@ span.feat-cat {
 	clear: both;
 	color: #fff;
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: .65rem;
 	font-weight: 700;
 	line-height: 100%;
@@ -1776,7 +1777,6 @@ span.feat-cat {
 #home-feat-text h2.stand-title,
 .feat-top2-left-text h2.stand-title,
 .feat-wide1-text h2.stand-title {
-	font-size: 2rem;
 	line-height: 120%;
 	text-transform: none;
 	}
@@ -1834,7 +1834,7 @@ span.feat-cat {
 	}
 
 span.feat-info-text {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: .7rem;
 	font-weight: 400;
 	line-height: 100%;
@@ -2126,7 +2126,7 @@ ul.side-list li:hover .side-list-img img {
 span.side-list-cat {
 	color: #999;
 	float: left;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: .65rem;
 	font-weight: 400;
 	line-height: 100%;
@@ -2538,7 +2538,7 @@ span.more-posts-text {
 	     -o-border-radius: 5px;
 		border-radius: 5px;
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: .8rem;
 	font-weight: 700;
 	line-height: 100%;
@@ -2662,11 +2662,12 @@ article#post-area {
 	}
 
 #post-header {
-	display: table;
-	margin: 30px auto 30px;
-	max-width: 750px;
-	padding: 0 10%;
-	width: 80%;
+    display: table;
+    max-width: 1200px;
+    /* padding: 0 10%; */
+    width: 100%;
+    border-bottom: 1px dotted blue;
+    background: black;
 	}
 
 .page #post-header {
@@ -2674,27 +2675,29 @@ article#post-area {
 	}
 
 span.post-head-cat {
-	clear: both;
-	color: #fff;
-	display: inline-block;
-	float: left;
-	font-family: helvetica, arial, sans-serif;
-	font-size: .65rem;
-	font-weight: bold;
-	line-height: 100%;
-	margin-bottom: 7px;
-	padding: 4px 15px;
-	text-transform: uppercase;
+    clear: both;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-family: helvetica, arial;
+    font-size: .65rem;
+    font-weight: bold;
+    line-height: 100%;
+    margin-bottom: 7px;
+    padding: 4px 15px;
+    text-transform: uppercase;
 	}
 
 h1.post-title,
 #content-main h1.post-title {
-	color: #222;
-	font-size: 2.6rem;
-	font-weight: 800;
-	line-height: 110%;
-	text-transform: none;
-	width: 100%;
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 110%;
+    text-transform: none;
+	width: 95%;
+	margin-bottom: 10px;
+	margin-left: 10px;
 	}
 
 #content-main h1.post-title {
@@ -2925,7 +2928,7 @@ span.feat-caption {
 
 .social-sharing-top,
 .social-sharing-bot {
-	margin-bottom: 30px;
+	margin-bottom: 1em;
 	}
 
 .share-count {
@@ -2946,7 +2949,7 @@ span.soc-count-text {
 
 span.soc-count-num {
 	color: #444;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans';
 	font-size: 26px;
 	font-weight: 900;
 	line-height: 100%;
@@ -3013,7 +3016,7 @@ span.soc-count-text {
 span.social-text,
 span.social-text-com {
 	color: #fff;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: 10px;
 	font-weight: 400;
 	line-height: 100%;
@@ -3105,7 +3108,7 @@ span.social-text-com {
 
 .post-tags {
 	float: left;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: .75rem;
 	font-weight: 400;
 	line-height: 120%;
@@ -3434,10 +3437,10 @@ h1.post-title-wide {
 	}
 
 #content-main #post-header {
-	margin: 0 0 30px;
 	padding: 0;
 	width: 100%;
 	max-width: none;
+	background: black;
 	}
 
 #post-wide-video {
@@ -3502,7 +3505,7 @@ ul.post-gallery-top-list li.flex-active-slide {
 	     -o-text-shadow: 1px 1px 3px rgba(0,0,0,.5);
 		text-shadow: 1px 1px 3px rgba(0,0,0,.5);
 	color: #fff;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Quicksand';
 	font-size: 70px;
 	font-weight: 400;
 	line-height: 100%;
@@ -3543,7 +3546,7 @@ ul.post-gallery-top-list li.flex-active-slide {
 
 .gallery-widget-text p {
 	color: #fff;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: .9rem;
 	font-weight: 700;
 	line-height: 120%;
@@ -3637,7 +3640,7 @@ ul.post-gallery-bot-list li:hover img {
 	}
 
 .mvp-related-posts ul li:first-child {
-	margin-left: 0 !important;
+	/*margin-left: 0 !important;*/
 	}
 
 .mvp-related-img {
@@ -3697,7 +3700,7 @@ ul.post-gallery-bot-list li:hover img {
 		border-radius: 5px;
 	cursor: pointer;
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: .8rem;
 	font-weight: 400;
 	line-height: 100%;
@@ -3739,7 +3742,7 @@ span.post-header {
 h3.comment-header {
 	color: #fff;
 	float: left;
-	font: 400 12px/12px 'Oswald', sans-serif;
+	font: 400 12px/12px 'Oswald';
 	position: relative;
 	text-transform: uppercase;
 	}
@@ -3841,7 +3844,7 @@ h3.comment-header {
 #cancel-comment-reply-link {
 	clear: both;
 	color: #fff;
-	font: 700 10px/100% 'Lato', sans-serif;
+	font: 700 10px/100% 'Lato';
 	padding: 5px 10px;
 	text-transform: uppercase;
 	}
@@ -3887,7 +3890,7 @@ ol.commentlist #respond {
 #comments .comment-meta-1 {
 	display: block;
 	float: left;
-	font: bold 14px/normal helvetica, arial, sans-serif;
+	font: bold 14px/normal helvetica, arial;
 	margin-bottom: 5px;
 	width: 100%;
 	}
@@ -4001,7 +4004,7 @@ ol.commentlist #respond {
 	}
 
 #respond p {
-	font: 12px/normal helvetica, arial, sans-serif;
+	font: 12px/normal helvetica, arial;
 	margin: 0;
 	}
 
@@ -4066,7 +4069,7 @@ ol.commentlist #respond {
 	box-shadow: none;
 	color: #fff;
 	cursor:pointer;
-	font: 700 12px/100% 'Open Sans', sans-serif;
+	font: 700 12px/100% 'Open Sans';
 	margin-top:10px;
 	padding: 5px 10px;
 	width: 120px;
@@ -4079,7 +4082,7 @@ ol.commentlist #respond {
 h3#reply-title,
 h2.comments {
 	color: #fff;
-	font: 700 14px/100% 'Oswald', sans-serif;
+	font: 700 14px/100% 'Oswald';
 	margin-bottom: 10px;
 	padding: 5px 10px;
 	text-shadow: 1px 1px 0 #000;
@@ -4178,7 +4181,7 @@ ul.archive-col-list li {
 	overflow: hidden;
 	position: relative;
 	width: 31.4249363868%; /* 329.3333333px / 1048px */
-	height: 320px;
+	/*height: 320px;*/
 	}
 
 ul.archive-list li:first-child {
@@ -4213,7 +4216,7 @@ ul.archive-col-list li .archive-list-in {
 	margin-right: 20px;
 	overflow: hidden;
 	width: 350px;
-	max-height: 140px;
+	max-height: 300px;
 	}
 
 ul.archive-col-list li .archive-list-img {
@@ -4363,7 +4366,7 @@ ul.author-social li i {
 
 #bbpress-forums,
 #bbpress-forums p {
-	font-family: helvetica, arial, sans-serif;
+	font-family: helvetica, arial;
 	}
 
 #bbpress-forums ol,
@@ -4559,14 +4562,14 @@ div.bbp-breadcrumb span {
 .woocommerce div.product p.price ins,
 .woocommerce div.product p.price del {
 	font-size: 1.2rem;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato';
 	}
 
 .woocommerce ul.products li.product .price del,
 .woocommerce ul.products li.product .price ins,
 .woocommerce ul.products li.product .price {
 	font-size: .9rem;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato';
 	}
 
 .woocommerce ul.products li.product .price,
@@ -4594,7 +4597,7 @@ div.bbp-breadcrumb span {
 .woocommerce button.button,
 .woocommerce input.button,
 .woocommerce .widget_price_filter .price_slider_amount .button {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato';
 	font-size: .7rem;
 	font-weight: 700;
 	line-height: 100%;
@@ -4612,7 +4615,7 @@ div.bbp-breadcrumb span {
 
 .woocommerce span.onsale {
 	border-radius: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato';
 	font-weight: 700;
 	line-height: 100%;
 	padding: 30px 35px 8px;
@@ -4745,7 +4748,7 @@ div.bbp-breadcrumb span {
 	}
 
 .woocommerce-review-link {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato';
 	font-size: .75rem;
 	font-weight: 400;
 	}
@@ -4767,7 +4770,7 @@ div.bbp-breadcrumb span {
 	}
 
 #woo-content p.woocommerce-result-count {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato';
 	font-size: .8rem;
 	font-weight: 400;
 	}
@@ -4804,7 +4807,7 @@ div.bbp-breadcrumb span {
 	}
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato';
 	font-size: .8rem;
 	font-weight: 400;
 	}
@@ -4871,7 +4874,7 @@ footer#foot-wrap {
 h3.foot-head {
 	color: #fff;
 	float: left;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: 1rem;
 	font-weight: 700;
 	line-height: 100%;
@@ -4946,7 +4949,7 @@ ul.foot-soc-list li i {
 	background: #555;
 	color: #999;
 	float: left;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: .5rem;
 	font-weight: 700;
 	line-height: 100%;
@@ -5058,7 +5061,7 @@ ul.foot-soc-list li i {
 	color: #aaa;
 	display: block;
 	float: left;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: .8rem;
 	font-weight: 400;
 	margin: 2px 5px 2px 0;
@@ -5086,7 +5089,7 @@ a.inf-more-but {
 	     -o-border-radius: 5px;
 		border-radius: 5px;
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 	font-size: .8rem;
 	font-weight: 700;
 	margin: 20px auto 0;
@@ -5124,3 +5127,46 @@ a.inf-more-but:hover {
 .paginate-links {
 	display: none;
 	}
+
+span[itemprop="keywords"] a{
+	padding: 5px;
+	line-height: 2em;
+    background: #e9fdfd;
+	box-shadow: 3px 3px 11px 0px #f1dede;
+	color: blue;
+}	
+
+/****** Customize CSS */
+
+.mvp-related-text {
+    width: 100%;
+    height: 6em;
+}
+.mvp-related-posts ul li {
+    float: left;
+    margin-left: 2.96296296296% !important;
+    overflow: hidden;
+    padding: 0 !important;
+    width: 22%;
+}
+
+span.post-head-cat{
+    padding: 5px;
+    line-height: 2em;
+    color: rgb(255, 255, 255);
+    float: right;
+    background: #160040 !important;
+}
+
+.social-sharing-top {
+	display: none;
+}
+
+#comments-button {
+	display: none;
+}
+
+.fb_iframe_widget_fluid_desktop iframe {
+   width: 1000px !important; 
+   min-width: 100%;
+}

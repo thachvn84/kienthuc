@@ -12,7 +12,7 @@
 	
 h3.home-feat-title,
 h3.side-list-title {
-	font-family: 'Oswald', sans-serif !important;
+	font-family: 'Oswald',   !important;
 	font-size: 1.3rem;
 	letter-spacing: 2px;
 	text-align: center;
@@ -35,7 +35,7 @@ ul.side-list li:first-child {
 	
 span.feat-cat {
 	background: none !important;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway';
 	font-weight: 400;
 	padding: 0 0 4px;
 	}
@@ -58,13 +58,13 @@ span.post-header,
 #woo-content h1.page-title,
 .woocommerce div.product .product_title,
 .woocommerce ul.products li.product h3 {
-	font-family: 'Playfair Display', sans-serif !important;
+	font-family: 'Playfair Display',   !important;
 	font-weight: 700;
 	}
 	
 .feat-wide1-text p,
 .feat-wide4-text p {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway';
 	font-weight: 300;
 	}
 
@@ -80,7 +80,7 @@ h1.post-title,
 h1.post-title-wide,
 #content-main blockquote p,
 #commentspopup #content-main h1 {
-	font-family: 'Playfair Display', sans-serif !important;
+	font-family: 'Playfair Display',   !important;
 	}
 	
 #infscr-loading,
@@ -102,7 +102,7 @@ h3.foot-head,
 #content-main h5,
 #content-main h6,
 span.side-list-cat {
-	font-family: 'Raleway', sans-serif !important;
+	font-family: 'Raleway',   !important;
 	}
 	
 .side-list-text p,
