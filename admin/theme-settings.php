@@ -287,7 +287,7 @@ $options[] = array( "name" => __('Featured Posts Tag Slug','mvp-text'),
 $options[] = array( "name" => __('Featured Heading','mvp-text'),
 			"desc" => "The heading that will be displayed on top of the middle Featured Content section of the homepage.",
 			"id" => $shortname."_feat_head",
-			"std" => "Featured News",
+			"std" => "Tin mới nhất",
 			"type" => "text");
 
 if (isset($home_layout)) {

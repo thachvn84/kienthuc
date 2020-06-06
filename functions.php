@@ -359,6 +359,22 @@ if ( !function_exists( 'mvp_sidebars_init' ) ) {
 			'before_title' => '<div class="home-title-wrap left relative"><h3 class="side-list-title">',
 			'after_title' => '</h3></div>',
 		));
+		register_sidebar( array(
+			'id' => 'homepage-left-widget',
+				'name' => 'homepage Left Widget Area',
+				'before_widget' => '<div id="%1$s" class="homepage-left-widget left relative %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<div class="homepage-left-title-wrap left relative"><h3 class="side-list-title">',
+				'after_title' => '</h3></div>',
+		) );
+		register_sidebar( array(
+			'id' => 'homepage-right-widget',
+				'name' => 'homepage Right Widget Area',
+				'before_widget' => '<div id="%1$s" class="homepage-right-widget left relative %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<div class="homepage-right-title-wrap left relative"><h3 class="side-list-title">',
+				'after_title' => '</h3></div>',
+		) );
 
 		register_sidebar(array(
 			'id' => 'sidebar-widget',
@@ -427,6 +443,10 @@ if ( !function_exists( 'mvp_sidebars_init' ) ) {
 }
 add_action( 'widgets_init', 'mvp_sidebars_init' );
 
+include("widgets/widget-cattag-random.php");
+include("widgets/widget-subhompage-top.php");
+include("widgets/widget-catpop.php");
+
 include("widgets/widget-ad.php");
 include("widgets/widget-catlist.php");
 include("widgets/widget-catrow.php");
@@ -437,6 +457,7 @@ include("widgets/widget-tagfeat.php");
 include("widgets/widget-taglist.php");
 include("widgets/widget-tagrow.php");
 include("widgets/widget-tags.php");
+
 
 /////////////////////////////////////
 // Register Custom Menus
