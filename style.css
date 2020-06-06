@@ -2666,7 +2666,7 @@ article#post-area {
     max-width: 1200px;
     /* padding: 0 10%; */
     width: 100%;
-    border-bottom: 1px dotted blue;
+    border-bottom: 1px dotted #000035;
     background: black;
 	}
 
