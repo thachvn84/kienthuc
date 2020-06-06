@@ -4857,7 +4857,7 @@ div.bbp-breadcrumb span {
 	}
 
 footer#foot-wrap {
-	background: #444;
+	background: rgb(0, 0, 0);
 	margin-top: 50px;
 	width: 100%;
 	}

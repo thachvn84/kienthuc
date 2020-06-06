@@ -4356,13 +4356,13 @@
 		}
 		
 	#foot-widget-wrap {
-		margin: 40px 4.1666666% 15px; /* 15px / 360px */
-		width: 91.6666666666%; /* 330px / 360px */
+		margin: 5px 1% 0px;
+		width: 91.6666666666%;
 		}
 		
 	.foot-widget {
 		margin-left: 0;
-		margin-bottom: 40px;
+		margin-bottom: 0px;
 		width: 100%;
 		}
 		
